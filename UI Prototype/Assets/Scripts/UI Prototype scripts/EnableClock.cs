@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class EnableClock : MonoBehaviour
 {
-    [SerializeField] private GameObject clockText;
+    [SerializeField] private GameObject clockText; //gets a reference to the Clock text in the inspector
 
-    public void DisplayClock()
+    public void DisplayClock()//enables the clock text (through an event)
     {
         clockText.SetActive(true);
     }
